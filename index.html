@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Law of Large Numbers Demo</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Ryan Brubaker">
+
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+         <![endif]-->
+
+   </head>
+   
+   <body>
+      <div>
+         <p>
+            Animated demonstration of the <a href="http://en.wikipedia.org/wiki/Law_of_large_numbers">Law of Large Numbers</a>. 
+            Shows that repeated simulations of a die roll converge to the expected value (3.5) of rolling a die.
+         </p>
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+         <span> <label># of Rolls: </label> </span>
+         <span style="margin-left: 10px;"><input type="radio" name="numRolls" value="10">10</span>
+         <span><input type="radio" name="numRolls" value="50">50<span>
+         <span><input type="radio" name="numRolls" value="100" checked>100<span>
+         <span><input type="radio" name="numRolls" value="200">200<span>
+         <!-- <span> <input id="numRolls" type="number" min="10" max="100" step="10" value="50" size="4">  -->           
+      </div>
+      
+      <div style="margin-bottom: 10px;">
+         <button id="runBtn" type="button">Run</button>
+      </div>
+      
+      <img id="dieImg" src="3.png"/>
+
+      
+      <div>
+         <canvas id="canvas" height="400" width="800"></canvas>      
+      </div>
+      
+      
+      <script src="jquery-2.1.0.min.js"></script>
+      <script src="lln.js"></script
+   </body>
+</html>
